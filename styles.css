@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    font-size: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 100px;
+    background-image: linear-gradient(140deg, #326183, #ffffff);
+}
+
+.tela {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px -10px;
+    padding: 20px;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: bottom;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 50pt;
+    margin-top: 50px;
+    color: #ffffff;
+    text-shadow: 2px 2px red, -2px -2px red, 2px -2px red, -2px 2px red;
+}
+
+#interacoes {
+    width: 100%;
+    height: 500px;
+}
+
+#interacoes>#screen-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#interacoes>#screen-selecionar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#interacoes>#screen-game {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.button {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    font-size: 22pt;
+    margin: 10px;
+    color: #9f2719;
+}
+
+.button:hover {
+    background-color: #9f2719;
+    color: #FFFFFF;
+
+}
+
+.cartas {
+    width: 200px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    background-image: url('images/coracao.png');
+    background-size: cover;
+    text-align: center;
+    line-height: 300px;
+    font-size: 30pt;
+    cursor: pointer;
+    user-select: none;
+    transition: all ease 0.3s;
+}
+
+.cartas:hover,
+.selected {
+    width: 220px;
+    height: 330px;
+    line-height: 330px;
+}
+
+.selected {
+    box-shadow: 0 0 20px 5px #ffffff;
+}
+
+#screen-vencedor {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.subTitle {
+    color: #ffffff;
+    font-size: 22pt;
+    text-align: center;
+    margin: 50px auto;
+    font: 'Montserrat', sans-serif;
+}
+
+.vencedor {
+    color: #ffffff;
+    font-size: 32pt;
+    margin-top: 30px;
+}
+
+#contadores-game {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 30px auto;
+}
+
+.contador {
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 20pt;
+}
+
+.bg-red {
+    background-color: #b74646;
+}
+
+.menu {
+    width: 150px;
+    padding: 5px;
+}
+
+.table {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #ffffffdd;
+    border-radius: 3px;
+    padding: 3px;
+    font: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.table td,
+.table th {
+    padding: 5px
+}
+
+.content {
+    padding: 10px;
+    background-color: #ffffffdd;
+    font: 'Montserrat';
+    margin-top: 10px;
+    border-radius: 3px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18pt;
+}
